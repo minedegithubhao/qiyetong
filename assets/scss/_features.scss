@@ -1,0 +1,325 @@
+.feature-section {
+	padding: 110px 0px 100px;
+	&:before {
+		z-index: -2;
+		height: 100%;
+		width: 100%;
+		content: '';
+		top: 65px;
+		bottom: 65px;
+		left: 115px;
+		position: absolute;
+		background-repeat: no-repeat;
+		background-image: url(../img/banner/map.png);
+	}
+}
+@-webkit-keyframes borderpls {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 currentColor;
+		box-shadow: 0 0 0 0 currentColor
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px currentColor;
+		box-shadow: 0 0 0 10px currentColor;
+		opacity: 0
+	}
+	to {
+		-webkit-box-shadow: 0 0 0 0 currentColor;
+		box-shadow: 0 0 0 0 currentColor;
+		opacity: 0
+	}
+}
+
+@keyframes borderpls {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 $base-color;
+		box-shadow: 0 0 0 0 $base-color
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px $base-color;
+		box-shadow: 0 0 0 10px $base-color;
+		opacity: 0
+	}
+	to {
+		-webkit-box-shadow: 0 0 0 0 $base-color;
+		box-shadow: 0 0 0 0 $base-color;
+		opacity: 0
+	}
+}
+@-webkit-keyframes borderpls {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 currentColor;
+		box-shadow: 0 0 0 0 currentColor
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px currentColor;
+		box-shadow: 0 0 0 10px currentColor;
+		opacity: 0
+	}
+	to {
+		-webkit-box-shadow: 0 0 0 0 currentColor;
+		box-shadow: 0 0 0 0 currentColor;
+		opacity: 0
+	}
+}
+
+@keyframes borderpls2 {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 $color-2;
+		box-shadow: 0 0 0 0 $color-2
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px $color-2;
+		box-shadow: 0 0 0 10px $color-2;
+		opacity: 0
+	}
+	to {
+		-webkit-box-shadow: 0 0 0 0 $color-2;
+		box-shadow: 0 0 0 0 $color-2;
+		opacity: 0
+	}
+}
+.feature-map-content {
+	height: 400px;
+	.it-maplocation {
+		cursor: pointer;
+		position: absolute;
+		box-shadow: 0px 3px 6px 0px rgba(255, 91, 46, 0.4);
+		.it-location-iiner {
+			width: 215px;
+			left: -215px;
+			z-index: 1;
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			background-color: #fff;
+			padding: 15px 0px 15px 45px;
+			transition: .4s all ease-in-out;
+			border-bottom: 2px solid $base-color;
+			&:before {
+				position: absolute;
+				content: '';
+				top: 10px;
+				left: 10px;
+				border-top: 10px solid transparent;
+				border-right: 10px solid $base-color;
+				border-bottom: 10px solid transparent;
+				transform: rotate(45deg);
+			}
+			h3 {
+				line-height: 1;
+				font-size: 50px;
+				font-weight: 700;
+				span {
+					font-size: 16px;
+				}
+			}
+		}
+		&:hover {
+			.it-location-iiner {
+				opacity: 1;
+				left: -205px;
+				visibility: visible;
+			}
+		}
+		&:nth-child(1) {
+			top: 50%;
+			right: 40px;
+		}
+		&:nth-child(2) {
+			top: 20%;
+			right: 50%;
+			.it-feature-indicatior {
+				background-color: $color-2;
+				box-shadow: 0px 3px 6px 0px rgba(65, 154, 159, 0.4);
+			}
+			.it-indicator-border1,
+			.it-indicator-border1 {
+				animation: borderpls2 1.5s infinite cubic-bezier(.4,0,1,1) both;
+			}
+			.it-location-iiner {
+				border-bottom: 2px solid $color-2;
+				&:before {
+					border-right: 10px solid $color-2;
+				}
+			}
+		}
+		&:nth-child(3) {
+			top: 20%;
+			left: 0;
+		}
+		&:nth-child(4) {
+			top: 70%;
+			left: 50%;
+			.it-feature-indicatior {
+				background-color: $color-2;
+				box-shadow: 0px 3px 6px 0px rgba(65, 154, 159, 0.4);
+			}
+			.it-indicator-border1,
+			.it-indicator-border1 {
+				animation: borderpls2 1.5s infinite cubic-bezier(.4,0,1,1) both;
+			}
+			.it-location-iiner {
+				border-bottom: 2px solid $color-2;
+				&:before {
+					border-right: 10px solid $color-2;
+				}
+			}
+		}
+		&:nth-child(5) {
+			bottom: 0%;
+			left: 20%;
+		}
+		&:nth-child(6) {
+			top: 50%;
+			left: 0%;
+			box-shadow: none;
+		}
+		&:nth-child(7) {
+			bottom: 0%;
+			right:  20%;
+			box-shadow: none;
+		}
+	}
+	.it-feature-indicatior {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		background-color: $base-color;
+		.it-indicator-border1,
+		.it-indicator-border1 {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			border-radius: inherit;
+			color: inherit;
+			box-shadow: 0 0 0 2px $base-color;
+			animation: borderpls 1.5s infinite cubic-bezier(.4,0,1,1) both;
+		}
+	}
+	.it-maplocation-img {
+		width: 40px;
+		height: 40px;
+		img {
+			border-radius: 100%;
+			box-shadow: 0px 8px 16px 0px rgba(64, 93, 117, 0.4);
+		}
+	}
+
+}
+.feature-text-content {
+	.about-text {
+		padding-top: 25px;
+	}
+	.feature-list-item  {
+		margin-top: 40px;
+		li {
+			width: 50%;
+			float: left;
+			font-weight: 700;
+			margin-bottom: 20px;
+			font-family: $heading;
+			i {
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				color: $base-color;
+				text-align: center;
+				margin-right: 15px;
+				border-radius: 100%;
+				background-color: #fff;
+				border: 2px solid #ffebe7;
+				transition: .3s all ease-in-out;
+			}
+			&:hover {
+				i {
+					color: #fff;
+					background-color: $color-2;
+					border: 2px solid $color-2;
+				}
+			}
+		}
+	}
+}
+/*Feature(Home Page 2)*/
+/*----------------------------------------------------*/
+.feature-section-two {
+	overflow: visible;
+	margin-bottom: -35px;
+	background-color: #f4f8fc;
+}
+.feature-content-2 {
+	display: flex;
+	top: -165px;
+	z-index: 1;
+	margin: 0 auto;
+	max-width: 1170px;
+	position: relative;
+	background-color: #fff;
+	.feature-slide-item,
+	.feature-two-content {
+		width: 50%;
+		float: left;
+	}
+	.feature-two-content {
+		padding-top: 165px;
+		.news-service-icon {
+			padding-top: 45px;
+		}
+		.section-title {
+			.site-tag {
+				font-weight: 400;
+			}
+			h2 {
+				padding-top: 10px;
+			}
+		}
+	}
+	.feature-slide-item {
+		.owl-dots {
+			top: 120px;
+			right: -330px;
+			position: absolute;
+			@extend%carousel-dot;
+		}
+	}
+}
+/*Feature(Home Page 3)*/
+/*----------------------------------------------------*/
+.feature-section {
+	&.feature-section-3 {
+		&:before {
+			background-image: url(../img/banner/map2.png); 
+		}
+	}
+}
+.feature-section-3 {
+	z-index: 1;
+	.background_overlay {
+		z-index: -1;
+		background-color: rgba(84, 48, 77, 0.95);
+	}
+	.section-title h2,
+	.section-title .sub-text ,
+	.about-text p,	
+	.feature-text-content .feature-list-item li {
+		font-weight: 400;
+		color: #fff;
+	}
+	.section-title h2 {
+		padding-bottom: 30px;
+	}
+	.section-title .sub-text {
+		margin-bottom: 5px;
+		line-height: 1.417;
+	}
+	.feature-text-content .feature-list-item li i {
+		background-color: transparent;
+		color: $color-2;
+		border: 1px solid #81597a;
+	}
+
+}

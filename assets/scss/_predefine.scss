@@ -1,0 +1,270 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-size: 16px;
+	line-height: 1.625;
+	color: $body-color;
+	font-family: $body-font;
+	-moz-osx-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased; 
+}
+::-moz-selection {
+	color: #ffffff;
+	background-color: $base-color; 
+}
+
+::selection {
+	color: #ffffff;
+	background-color: $base-color; 
+}
+
+::-moz-selection {
+	color: #ffffff;
+	background-color: $base-color; 
+}
+.container {
+	max-width: 1200px;
+}
+// global settings
+.ul-li ul {
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+		display: inline-block;
+	}
+}
+.ul-li-block ul {
+	margin:0;
+	padding: 0;
+	li{
+		display: block;
+		list-style: none;
+	}
+}
+div#preloader { 
+	position: fixed; 
+	left: 0;
+	top: 0;
+	z-index: 99999; 
+	width: 100%; 
+	height: 100%;
+	overflow: visible;
+	background: #fff url('../img/preloader.gif') no-repeat center center;
+}
+[data-background] {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+a {
+	color: inherit;
+	text-decoration:none;
+	transition: .3s all ease-in-out;
+	&:hover, &:focus{
+		text-decoration: none;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+section {
+	overflow: hidden;
+}
+button {
+	cursor: pointer;
+}
+.form-control:focus,
+button:visited,
+button.active,
+button:hover,
+button:focus,
+input:visited,
+input.active,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+a:hover,
+a:focus,
+a:visited,
+a.active,
+select,
+select:hover,
+select:focus,
+select:visited {
+	outline: none;
+	box-shadow: none;
+	text-decoration: none;
+	color: inherit;
+}
+.form-control {
+	box-shadow: none;
+}
+.relative-position {
+	position: relative;
+}
+
+.pera-content {
+	p {
+		margin-bottom: 0;
+	}
+}
+.no-paading {padding: 0}
+.headline-1 h1,
+.headline-1 h2,
+.headline-1 h3, 
+.headline-1 h4, 
+.headline-1 h5,
+.headline-1 h6 {
+	margin: 0;
+	font-family: $heading;
+}
+.headline-2 h1,
+.headline-2 h2,
+.headline-2 h3, 
+.headline-2 h4, 
+.headline-2 h5,
+.headline-2 h6 {
+	margin: 0;
+	font-family: $heading-2;
+}
+.headline-3 h1,
+.headline-3 h2,
+.headline-3 h3, 
+.headline-3 h4, 
+.headline-3 h5,
+.headline-3 h6 {
+	margin: 0;
+	font-family: $heading-3;
+}
+.block-display {
+	width: 100%;
+	display: block;
+}
+.background_overlay {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#cursor .it-cursor {
+	position: fixed;
+	top: inherit;
+	left: inherit;
+	z-index: 99;
+	pointer-events: none;
+}
+#cursor .cursor_outer {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #5b1d67;
+	border-radius: 30px;
+	margin-top: -17px;
+	margin-left: -16px;
+	transition: all 50ms linear 0ms;
+}
+#cursor .cursor_inner {
+	width: 6px;
+	height: 6px;
+	background-color: #92d3d7;
+	border-radius: 6px;
+	margin-top: -5px;
+	margin-left: -4px;
+}
+.scrollup {
+	width: 55px;
+	right: 20px;
+	z-index: 5;
+	height: 55px;
+	bottom: 20px;
+	display: none;
+	position: fixed;
+	border-radius: 100%;
+	line-height: 55px;
+	background-color: $base-color;
+	i {
+		color: #fff;
+		font-size: 20px;
+	}
+}
+/*Section title*/
+/*-----------------------*/
+.section-title {
+	.site-tag {
+		font-size: 24px;
+		color: $color-2;
+	}
+	h2 {
+		font-size: 60px;
+		font-weight: 600;
+		text-transform: capitalize;
+	}
+	.sub-text {
+		font-size: 24px;
+		font-weight: 600;
+		padding-left: 40px;
+		position: relative;
+		&:before {
+			top: 8px;
+			left: 0;
+			width: 2px;
+			content: '';
+			height: 20px;
+			position: absolute;
+			background-color: $base-color;
+		}
+	}
+}
+.section-title-text {
+	font-size: 18px;
+	margin-top: 10px;
+	line-height: 1.667;
+	padding-left: 30px;
+}
+.title-style-one {
+	.site-tag {
+		font-family: $site-tag-1;
+		font-weight: 700;
+	}
+	h2 {
+		line-height: 1.167;
+		padding: 5px 0px 30px;
+	}
+	.sub-text {
+		line-height: 1.417;
+	}
+}
+.title-style-two {
+	.site-tag {
+		font-family: $body-font;
+		font-weight: 500;
+	}
+	h2 {
+		font-weight: 700;
+		padding-top: 10px;
+		line-height: 1.167;
+	}
+	.sub-text {
+		line-height: 1.417;
+	}
+}
+.title-style-three { 
+	.site-tag {
+		font-size: 18px;
+		font-weight: 700;
+		font-family: $body-font;
+	}
+	h2 {
+		font-weight: 400;
+		font-family: $heading-3;
+	}
+	.sub-text {
+		font-family: $heading-3;
+	}
+}
+/*--------------------------*/

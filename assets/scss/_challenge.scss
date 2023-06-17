@@ -1,0 +1,108 @@
+.challenge-section {
+	z-index: 1;
+	padding: 120px 0px; 
+	background-color: #fff9f9;
+	&:before,
+	&:after {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 700px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(../img/banner/chl2.jpg);
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		top: 0;
+		right: 0;
+		left: auto;
+		height: 100%;
+		width: 700px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: -1;
+		background-image: url(../img/banner/chls.png);
+	}
+	.custom_tab_button {
+		margin-right: 20px;
+		border-radius: 20px;
+		background-color: #fff;
+		padding: 115px 0px 115px 95px;
+		box-shadow: 0px 16px 32px 0px rgba(84, 48, 77, 0.04);
+		.nav {
+			display: inherit;
+		}
+		.nav-tabs {
+			border-bottom: none;
+		}
+		li {
+			line-height: 1;
+			font-size: 30px;
+			font-weight: 700;
+			font-weight: 600;
+			margin-bottom: 70px;
+			font-family: $heading;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				&:before {
+					top: -10px;
+					content: '';
+					height: 60px;
+					width: 60px;
+					left: -25px;
+					z-index: -1;
+					opacity: 0;
+					border-radius: 100%;
+					position: absolute;
+					transform: scale(.5);
+					background-color: #ffefea;
+					transition: .3s all ease-in-out;
+				}
+			}
+			a.active {
+				z-index: 1;
+				position: relative;
+				&:before {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+		}
+	}
+	.tab-content {
+		margin: 50px 0px 0px 15px;
+		.title-style-one h2 {
+			padding: 10px 0px 35px;
+		}
+		.challenge-tab-video {
+			height: 90px;
+			width: 90px;
+			top: -45px;
+			right: 30px;
+			line-height: 90px;
+			border-radius: 100%;
+			position: absolute;
+			background-color: #fff;
+			box-shadow: 0px 16px 32px 0px rgba(255, 91, 46, 0.1);
+			a {
+				width: 100%;
+				display: block;
+			}
+			i {
+				color: $base-color;
+			}
+		}
+	}
+	.challenge-img-bg {
+		top: 0;
+		right: 0;
+		z-index: -1;
+		position: absolute;
+	}
+}

@@ -1,0 +1,82 @@
+/*
+Theme Name: 企业通
+Theme URI: www.shenpingtool.com
+Author: canbe
+Author URI: www.shenpingtool.com
+Description: 帮助企业又快又好的定制门户站点【可选，建议填】
+Version: 1.0
+*/
+
+.zhudaohang li a:hover{
+    color: #ff5b2e;
+}
+/*============== 分页 start ================*/
+.fenye{
+    width: 98%;
+    height: 36px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 36px;
+    /*border-top: 1px solid #E8E8E8;*/
+}
+.fenye a{
+    font-size: 14px;
+    padding: 4px 6px 4px 6px;
+    margin: 0 2px 0 2px;
+    border: 1px solid #aaa;
+    text-decoration: none;
+    color: #333;
+}
+.fenye span{
+    font-size: 14px;
+    color: #333;
+}
+.fenye a:hover {
+    background: #ff5b2e;
+    color: #fff;
+}
+.fenye a.current {
+    background: #ff5b2e;
+    color: #fff;
+}
+/*============== 分页 end ================*/
+
+/* ============ 面包屑导航 start ================ */
+.bread {
+    line-height: 22px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    color: white;
+}
+.bread a{
+    text-decoration: none;
+}
+.bread a:hover{
+    text-decoration: underline;
+    color: #ff5b2e;
+}
+.location {
+    float:left;
+}
+.breadcrumbs {
+    float:left;
+}
+/* ============ 面包屑导航 end ================ */
+.nio_prev_post .fa{
+    padding: 0 10px;
+}
+.blog_details_extra_text .next_prev_post a span{
+    color: #54304d;
+}
+.blog_details_extra_text .next_prev_post a:hover span{
+    color: #ff5b2e;
+}
+
+.z-index-top{
+    z-index: 1;
+}
+.about-feature-item .pera-content{
+    margin: 0 20px 0 0;
+}

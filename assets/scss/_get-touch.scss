@@ -1,0 +1,64 @@
+.get-touch-section {
+	overflow: visible;
+	.get-touch-content {
+		display: flex;
+		.get-touch-part {
+			width: 50%;
+			padding: 55px;
+			span {
+				color: #fff;
+				font-size: 18px;
+				font-weight: 500;
+			}
+			h2 {
+				z-index: 2;
+				color: #fff;
+				font-size: 40px;
+				font-weight: 400;
+				position: relative;
+			}
+		}
+		.get-touch-one {
+			background-color: $base-color;
+		}
+		.get-touch-two {
+			background-color: $body-color;
+		}
+		.get-touch-icon1,
+		.get-touch-icon2 {
+			left: 0;
+			right: 0;
+			top: 50%;
+			position: absolute;
+			text-align: center;
+			transform: translateY(-50%);
+		}
+		.get-touch-sideimg {
+			top: -248px;
+			left: -160px;
+			position: absolute;
+		}
+	}
+}
+.get-touch-section.team-page-get-touch {
+	.get-touch-content {
+		z-index: 1;
+	}
+	.icon-bg2 {
+		right: 0;
+		top: auto;
+		z-index: 0;
+		left: auto;
+		bottom: 0px;
+		i {
+			line-height: 1;
+			color: #5e3c57;
+			font-size: 180px;
+		}
+	}
+	.get-touch-content .get-touch-part h2  {
+		font-size: 36px;
+		font-weight: 700;
+		padding-top: 20px;
+	}
+}

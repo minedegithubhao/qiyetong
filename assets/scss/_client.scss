@@ -1,0 +1,146 @@
+.client-area {
+	padding-bottom: 115px; 
+	.client-number {
+		padding-bottom: 120px;
+		h3 {
+			font-size: 18px;
+			font-weight: 600;
+			strong {
+				font-size: 40px;
+				color: $color-2;
+				font-weight: 600;
+				position: relative;
+				&:after {
+					left: 0;
+					content: '';
+					bottom: 4px;
+					height: 2px;
+					width: 100%;
+					position: absolute;
+					background-color: $color-2;
+				}
+			}
+		}
+	}
+	.client-item-list {
+		display: flex;
+		margin: 0 -15px;
+		flex-wrap: nowrap;
+		li {
+			width: 170px;	
+			height: 170px;
+			margin: 0px 15px;
+			overflow: hidden;
+			line-height: 170px;
+			text-align: center;
+			position: relative;
+			background-color: #fff9f9;
+			transition: .3s all ease-in-out;
+			&:nth-child(1) {
+				transform: translateY(-180px);
+			}
+			&:nth-child(2) {
+				transform: translateY(-90px);
+			}
+			&:nth-child(5) {
+				transform: translateY(-90px);
+			}
+			&:nth-child(6) {
+				transform: translateY(-180px);
+			}
+			.c-img-1 {
+				transition: .3s all ease-in-out;
+			}
+			.c-hover-bg,
+			.c-hover-img  {
+				position: absolute;
+				top: 0;
+				opacity: 0;
+				visibility: hidden;
+				left: 0;
+				transition: .3s all ease-in-out;
+			}
+			.c-hover-img {
+				z-index: 3;
+				left: 0;
+				right: 0
+			}
+			&:before {
+				content: '';
+				top: 0;
+				left: 0;
+				z-index: 2;
+				opacity: 0;
+				width: 100%;
+				height: 100%;
+				visibility: hidden;
+				position: absolute;
+				transition: .3s all ease-in-out;
+				background-color: rgba(255, 91, 46, 0.8)
+			}
+
+			&:hover {
+				box-shadow: 0px 20px 16px 0px rgba(255, 91, 46, 0.1);
+				.c-img-1 {
+					opacity: 0;
+				}
+				.c-hover-bg,
+				.c-hover-img {
+					opacity: 1;
+					visibility: visible;
+				}
+				&:before {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
+/*Client area section (Home Page 3)*/
+/*----------------------------------------------------*/
+.client-area-3 {
+	padding: 45px 0px 80px;
+	.client-logo-item {
+		padding: 45px;
+		border: 2px solid #ffe5df;
+		.client-logo-img {
+			margin: 0px 25px;
+			display: inline-block;
+			.c3-client-hover {
+				opacity: 0;
+				top: -70px;
+				z-index: 2;
+				left: -15px;
+				width: 170px;
+				height: 170px;
+				position: absolute;
+				visibility: hidden;
+				transition: .3s all ease-in-out;
+				&:before {
+					left: 0;
+					width: 100%;
+					content: '';
+					opacity: .8;
+					height: 100%;
+					position: absolute;
+					background-color: $base-color;
+				}
+				.c3-hover-logo {
+					top: 50%;
+					left: 0;
+					right: 0;
+					text-align: center;
+					position: absolute;
+					transform: translateY(-50%);
+				}
+			}
+			&:hover {
+				.c3-client-hover {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.call-to-action-2 {
+	padding-bottom: 120px;
+	.call-to-content-2 {
+		z-index: 1;
+		overflow: hidden;
+		background-color: #f4f8fc;
+		padding: 110px 0px 120px;
+		border-radius: 15px;
+		.call-to-text {
+			margin: 0 auto;
+			max-width: 900px;
+			.call-btn {
+				@extend%about_btn_pair;
+				margin-top: 40px;
+				justify-content: center;
+				a {
+					z-index: 1;
+					overflow: hidden;
+					position: relative;
+					&:first-child {
+						@extend%button-hover;
+					}
+				}
+			}
+		}
+		.call-icon-bg {
+			left: 0;
+			top: -20px;
+			z-index: -1;
+			line-height: 1;
+			position: absolute;
+			i {
+				font-size: 200px;
+				color: #e5ebf1;
+			}
+		}
+		.icon-bg2 {
+			bottom: -20px;
+			right: 0;
+			top: auto;
+			left: auto;
+		}
+	}
+}

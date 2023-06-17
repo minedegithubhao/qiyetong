@@ -1,0 +1,27 @@
+.breadcurmb-section .background_overlay {
+  background-color: rgba(81, 104, 112, 0.7); }
+
+.breadcurmb-content {
+  padding: 220px 0px 140px 0px;
+  position: relative;
+  z-index: 1; }
+  .breadcurmb-content h2 {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700; }
+  .breadcurmb-content .breadcrumb {
+    background-color: transparent; }
+    .breadcurmb-content .breadcrumb li {
+      color: #fff;
+      font-weight: 700;
+      position: relative;
+      margin-right: 25px; }
+  .breadcurmb-content .breadcrumb-item + .breadcrumb-item::before {
+    top: 5px;
+    width: 2px;
+    padding: 0;
+    content: '';
+    height: 15px;
+    left: -12px;
+    position: absolute;
+    background-color: #fff; }

@@ -1,0 +1,69 @@
+.platform-section {
+	overflow: visible;
+	padding: 110px 0px 70px;
+	margin-bottom: 40px;
+	.background_overlay {
+		background-color: rgba(81, 104, 112, .7);
+	}
+	.laptop-mockup {
+		position: absolute;
+		left: -280px;
+		bottom: -85px;
+	}
+	.platform-content {
+		float: right;
+		max-width: 570px;
+		.section-title {
+			h2,
+			.sub-text {
+				color: #fff;
+				&:before {
+					background-color:  $color-2;
+				}
+			}
+			h2 {
+				padding: 10px 0px 28px;
+			}
+		}
+		.platform-progress {
+			padding: 55px 0px 0px 35px;
+		}
+		.platform-progress-item {
+			width: 100%;
+			padding-bottom: 30px;
+			display: flex;
+			.platform-progress-text {
+				padding-top: 5px;
+				max-width: 295px;
+				h3 {
+					color: #fff;
+					font-size: 20px;
+					font-weight: 700;
+					padding-bottom: 22px;
+				}
+				p {
+					color: #fff;
+					line-height: 1.625;
+				}
+			}
+		}
+		.progress_area {
+			line-height: 1;
+			margin-right: 45px;
+			strong {
+				left: 0;
+				right: 0;
+				color: #fff;
+				font-size: 40px;
+				font-weight: 700;
+				line-height: 130px;
+				position: absolute;
+				text-align: center;
+				span {
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}

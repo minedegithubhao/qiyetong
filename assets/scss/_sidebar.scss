@@ -1,0 +1,152 @@
+/*Side bar area*/
+/*----------------------------------------------------*/
+.wide_side_bar {
+	top: 15px;
+	margin-left: 5px;
+	position: relative;
+	display: inline-block;
+	z-index: 3;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	right: 35px;
+	span {
+		position: relative;
+		top: 10px;
+		right: -35px;
+		&:before {
+			content: '';
+			height: 3px;
+			width: 25px;
+			right: 0;
+			position: absolute;
+			background-color: $base-color;
+		}
+		&:nth-child(1) {
+			&:before {
+				top: 0;
+				width: 25px;
+			}
+		}
+		&:nth-child(2) {
+			&:before {
+				top: 10px;
+				width: 32px;
+			}
+		}
+		&:nth-child(3) {
+			&:before {
+				top: 20px;
+				width: 38px;
+			}
+		}
+	}
+}
+.wide_side_bar {
+	height: 120px;
+	width: 120px;
+	margin-left: 80px;
+	text-align: center;
+	z-index: 1;
+	background-color: $base-color;
+	top: 0;
+	span {
+		top: 45px;
+		left: 20px;
+		&:before {
+			background-color: #fff;
+			width: 38px;
+		}
+	}
+}
+.side_inner_content {
+	top: 0px;
+	bottom: 0;
+	right: -320px;
+	height: 110vh;
+	z-index: 101;
+	position: fixed;
+	width: 300px;
+	overflow-y: scroll;
+	background-color: #fff;
+	padding: 50px 30px;
+	-webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, .19);
+	box-shadow: 0px 3px 5px rgba(100, 100, 100, .19);
+	transition: all 0.5s;
+	p {
+		text-align: left;
+	}
+	.side_inner_logo {
+		margin: 30px 0px;
+	}
+	.side_contact {
+		margin-bottom: 30px;
+		.social_widget {
+			h3 {
+				font-size: 18px;
+				padding: 10px 0px 20px 0px;
+			}
+			li {
+				margin: 0px 3px;
+			}
+		}
+	}
+	.side_copywright {
+		font-size: 14px;
+	}
+	.close_btn {
+		top: 30px;
+		left: 20px;
+		cursor: pointer;
+		color: $base-color;
+		position: absolute;
+		i {
+			font-size: 14px;
+		}
+	}
+}
+.wide_side_bar {
+	right: 0;
+}
+.wide_side_inner {
+	position: absolute;
+}
+.wide_side_inner.wide_side_on .side_inner_content {
+	padding-top: 50px;
+}
+.side_inner_content .close_btn {
+	top: 25px;
+}
+.wide_side_inner.wide_side_on {
+	.side_inner_content {
+		right: -15px;
+		z-index: 99;
+		transition: all 0.7s;
+	}
+}
+.wide_side_inner {
+	.side_overlay {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		width: 100%;
+		z-index: 9;
+		height: 110vh;
+		visibility: hidden;
+		position: fixed;
+		background: rgba(0, 0, 0, 0.8);
+		transition: all 0.3s ease-in-out;
+		cursor: url(../img/cl.png), auto;
+	}
+}
+.body_overlay_on {
+	overflow: hidden;
+}
+.wide_side_inner.wide_side_on {
+	.side_overlay {
+		opacity: 1;
+		visibility: visible;
+	}
+}

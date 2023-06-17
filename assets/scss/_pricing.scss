@@ -1,0 +1,89 @@
+.pricing-plan-section {
+	padding: 115px 0px 95px;
+	background-color: #f4f8fc;
+	.title-text {
+		max-width: 540px;
+	}
+	.pricing-plan-content {
+		padding-top: 100px;
+		margin: 0 15px;
+		.pricing-item-list {
+			padding: 60px 50px 70px;
+			background-color: #fff;
+			.pricing-icon {
+				margin-bottom: 25px;
+			}
+			.pricing-price-tag {
+				.pricing-cat {
+					color: $color-2;
+					font-size: 18px;
+					font-weight: 700;
+				}
+				.price-amount {
+					line-height: 1;
+					font-size: 100px;
+					font-weight: 700;
+					margin-top: 10px;
+					margin-bottom: 0;
+					span {
+						font-size: 16px;
+					}
+				}
+				.pricing-period {
+					font-size: 14px;
+					font-weight: 500;
+				}
+			}
+			.pricing-facility {
+				margin-top: 35px;
+				li {
+					font-size: 18px;
+					position: relative;
+					margin-bottom: 10px;
+					i {
+						top: 6px;
+						right: 0;
+						color: $color-2;
+						font-size: 14px;
+						position: absolute;
+					}
+				}
+			}
+			.pricing-btn {
+				margin-top: 55px;
+				a {
+					z-index: 1;
+					font-weight: 700;
+					position: relative;
+					@extend%btn-circle;
+					&:before {
+						top: -20px;
+						left: -20px;
+						background-color: #dff5f6;
+					}
+				}
+			}
+		}
+		.popular-package {
+			z-index: 1;
+			top: -25px;
+			position: relative;
+			padding: 85px 50px 70px;
+			border-top: 5px solid $base-color;
+			box-shadow: 0px 8px 16px 0px rgba(84, 48, 77, 0.08);
+			.pricing-cat {
+				color: $base-color !important;
+			}
+			.pricing-btn {
+				margin-top: 70px;
+			}
+			.pricing-btn { 
+				a {
+					&:before {
+						background-color: #ffede8 !important;
+					}
+				}
+			}
+		}
+	}
+}
